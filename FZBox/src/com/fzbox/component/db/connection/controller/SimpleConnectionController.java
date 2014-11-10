@@ -7,21 +7,21 @@ import com.fzbox.component.db.connection.IDatasource;
 import android.content.Context;
 
 public class SimpleConnectionController implements IConnectionController {
-	private IDatasource datasource = null;
+    private IDatasource datasource = null;
 
-	private Context context = null;
+    private Context context = null;
 
-	public SimpleConnectionController(Context context, IDatasource datasource) {
-		this.datasource = datasource;
-		this.context = context;
-	}
+    public SimpleConnectionController(Context context, IDatasource datasource) {
+        this.datasource = datasource;
+        this.context = context;
+    }
 
-	public IConnection hold() {
-		return ConnectionFactory.createConnection(context, datasource);
-	}
+    public IConnection hold() {
+        return ConnectionFactory.createConnection(context, datasource);
+    }
 
-	public void free(IConnection connection) {
-		connection.close();
-	}
+    public void free(IConnection connection) {
+        connection.close();
+    }
 
 }

@@ -7,25 +7,25 @@ import com.fzbox.component.db.connection.controller.IConnectionController;
 import com.fzbox.framework.beans.ICreatedable;
 
 public interface IDatasource extends ICreatedable {
-	public final static String SQLITE_DB = "sqlite";
+    public final static String SQLITE_DB = "sqlite";
 
-	public final static String MAPPING_PACKAGE = "com.ibox.framework.db.bean";
+    public final static String MAPPING_PACKAGE = "com.ibox.framework.db.bean";
 
-	public String getId();
+    public String getId();
 
-	public String getDatabaseType();
+    public String getDatabaseType();
 
-	public String getDatabaseFile();
+    public String getDatabaseFile();
 
-	public int getDatabaseVersion();
+    public int getDatabaseVersion();
 
-	public int getConnectionSize();
+    public int getConnectionSize();
 
-	public long getHoldTime();
+    public long getHoldTime();
 
-	public List<Mapping> getMappings();
+    public List<Mapping> getMappings();
 
-	public Mapping findMappingByClassName(String className);
+    public Mapping findMappingByClassName(String className);
 
-	public IConnectionController getConnectionController();
+    public IConnectionController getConnectionController();
 }

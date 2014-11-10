@@ -4,58 +4,58 @@ import org.simpleframework.xml.Attribute;
 
 public class Column {
 
-	@Attribute(name = "column-name", required = false)
-	private String columnName;
+    @Attribute(name = "column-name", required = false)
+    private String columnName;
 
-	@Attribute(name = "column-type", required = false)
-	private String columnType;
+    @Attribute(name = "column-type", required = false)
+    private String columnType;
 
-	@Attribute(name = "column-limit", required = false)
-	private String columnLimit;
+    @Attribute(name = "column-limit", required = false)
+    private String columnLimit;
 
-	@Attribute(name = "property-name", required = false)
-	private String propertyName;
+    @Attribute(name = "property-name", required = false)
+    private String propertyName;
 
-	@Attribute(name = "is-ignore", required = false)
-	private String isIgnore;
+    @Attribute(name = "is-ignore", required = false)
+    private String isIgnore;
 
-	public String getColumnName() {
-		return columnName;
-	}
+    public String getColumnName() {
+        return columnName;
+    }
 
-	public void setColumnName(String columnName) {
-		this.columnName = columnName;
-	}
+    public void setColumnName(String columnName) {
+        this.columnName = columnName;
+    }
 
-	public String getColumnType() {
-		return columnType;
-	}
+    public String getColumnType() {
+        return columnType;
+    }
 
-	public void setColumnType(String columnType) {
-		this.columnType = columnType;
-	}
+    public void setColumnType(String columnType) {
+        this.columnType = columnType;
+    }
 
-	public String getColumnLimit() {
-		return columnLimit;
-	}
+    public String getColumnLimit() {
+        return columnLimit;
+    }
 
-	public void setColumnLimit(String columnLimit) {
-		this.columnLimit = columnLimit;
-	}
+    public void setColumnLimit(String columnLimit) {
+        this.columnLimit = columnLimit;
+    }
 
-	public String getPropertyName() {
-		return propertyName;
-	}
+    public String getPropertyName() {
+        return propertyName;
+    }
 
-	public void setPropertyName(String propertyName) {
-		this.propertyName = propertyName;
-	}
+    public void setPropertyName(String propertyName) {
+        this.propertyName = propertyName;
+    }
 
-	public String getIsIgnore() {
-		return isIgnore;
-	}
+    public String getIsIgnore() {
+        return isIgnore;
+    }
 
-	public void setIsIgnore(String isIgnore) {
-		this.isIgnore = isIgnore;
-	}
+    public void setIsIgnore(String isIgnore) {
+        this.isIgnore = isIgnore;
+    }
 }

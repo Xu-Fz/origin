@@ -4,32 +4,34 @@ import android.database.Cursor;
 
 public interface IConnection {
 
-	public void beginTransaction();
+    public void beginTransaction();
 
-	public IPrepareStatement createStatement(String sql);
+    public IPrepareStatement createStatement(String sql);
 
-	public void rollback();
+    public void rollback();
 
-	public void commit();
+    public void commit();
 
-	public boolean isOpen();
+    public boolean isOpen();
 
-	public void setLockingEnabled(boolean isLocked);
+    public void setLockingEnabled(boolean isLocked);
 
-	public Cursor query(String sql);
+    public Cursor query(String sql);
 
-	public Cursor query(String sql, Object[] args);
+    public Cursor query(String sql, Object[] args);
 
-	public void execute(String sql);
+    public void execute(String sql);
 
-	public void execute(String sql, Object[] args);
+    public void execute(String sql, Object[] args);
 
-	public void close();
+    public Cursor rawQuery(String sql, String[] selectionArgs);
 
-	public boolean isOpenTransaction();
+    public void close();
 
-	public int getVersion();
+    public boolean isOpenTransaction();
 
-	public void setVersion(int version);
+    public int getVersion();
+
+    public void setVersion(int version);
 
 }

@@ -1,13 +1,13 @@
 package com.fzbox.framework.core.ui;
 
-import android.app.Activity;
+import android.app.ActivityGroup;
 import android.os.Bundle;
 import android.os.Message;
 import android.util.Log;
 
 import com.fzbox.framework.core.logic.builder.ILogicBuilder;
 
-abstract public class BaseActivity extends Activity implements
+abstract public class BaseGroupActivity extends ActivityGroup implements
 		IActivityObject {
 	private static final String TAG = "BaseActivity";
 
